@@ -28,8 +28,8 @@
     </div>
 
 
-<div class="modal fade" [attr.id]="'exampleModal' + i" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+<div (click)="onCloseClick()" class="modal fade" [attr.id]="'exampleModal' + i" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" (click)="$event.stopPropagation()">
       <div class="modal-content">
         <div class="modal-body">
           <video controls class="trailer" name="media">
