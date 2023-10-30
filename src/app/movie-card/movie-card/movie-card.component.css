@@ -1,0 +1,107 @@
+
+.cardImage{
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 45px;
+}
+
+.detailButton{
+    background-color: red;
+    border: red;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    position: absolute;
+    right: 32px;
+    top: 68%;
+}
+.secondImage{
+    position: absolute;
+    width: 60px;
+    top: 62%;
+    left: 15%;
+    border-radius: 10px;
+}
+.trailer{
+    width: 100%;
+}  
+.card-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 6px;
+}
+.releaseDate,
+.time,
+.imdb{
+    margin-left: auto;
+    margin-right: auto;
+}
+.info{
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.infos{
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    border-radius: 35px;
+    margin: 25px;
+    border: none;
+}
+
+.image-container {
+    position: relative;
+    width: 285px;
+  }
+  .cardImage{
+    object-fit: cover;
+    height: 400px;
+  }
+  
+  .cardImage:hover {
+    filter: blur(10px); 
+  }
+  
+  .description {
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    opacity: 0;
+    color: white; 
+    font-size: 15px;
+    transition: opacity 0.7s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .image-container:hover .description {
+    opacity: 1; 
+  }
+  .image-container:hover .cardImage {
+    filter: blur(5px); 
+  }
+  
+  .image-container:hover .description {
+    opacity: 1; 
+  }
+  .card {
+    height: 550px;
+}
+.imageDiv,
+.image-container {
+  height: 400px;
+}
+.card-body{
+  padding-top: 25px;
+}
+.modal-content{
+  margin-top: 40%;
+}

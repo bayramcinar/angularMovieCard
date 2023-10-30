@@ -1,0 +1,41 @@
+
+  <div class="card" style="width: 18rem;">
+      <div class="imageDiv">
+        <div class="image-container">
+          <img [src]="image" class="card-img-top cardImage">
+          <p class="description">{{description}}</p>
+        </div>
+      </div>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" [attr.data-bs-target]="'#exampleModal' + i" class="btn btn-primary detailButton"><i class="fa-solid fa-play"></i></button>
+      <div class="card-body">
+        <img [src]="image" class="secondImage">
+        <p class="card-text">{{name}}</p>
+        <div class="row">
+          <div class="releaseDate col-4">
+            <h6 class="info">Date</h6>
+            <h6 class="infos">{{date}}</h6>
+          </div>
+          <div class="imdb col-4">
+            <h6 class="info">IMdb</h6>
+            <h6 class="infos">{{imdb}}</h6>
+          </div>
+          <div class="time col-4">
+            <h6 class="info">Time</h6>
+            <h6 class="infos">{{time}}</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+<div class="modal fade" [attr.id]="'exampleModal' + i" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <video controls class="trailer" name="media">
+            <source [src]="video" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+</div>

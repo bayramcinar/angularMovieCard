@@ -1,0 +1,7 @@
+<div class="general">
+    <div class="row">
+        <div class="col" *ngFor="let movie of jsonData; let i = index">
+            <app-movie-card [date]="movie.releaseDate" [time]="movie.time" [description]="movie.describe" [image]="movie.image" [imdb]="movie.IMdbPoint" [name]="movie.name" [video]="movie.video" [i]="i"></app-movie-card>
+        </div>
+    </div>
+</div>
