@@ -1,4 +1,5 @@
-import { Component,Input } from '@angular/core';
+import { Component, Input, Renderer2, ElementRef, OnInit } from '@angular/core';
+
 
 @Component({
   selector: 'app-movie-card',
@@ -14,4 +15,11 @@ export class MovieCardComponent {
   @Input() time = "";
   @Input() description = "";
   @Input() i:number | undefined;
+
+  constructor(private renderer: Renderer2, private el: ElementRef) { }
+
+  onCloseClick(){
+    const video: HTMLVideoElement = this.el.nativeElement.querySelector('.trailer');
+    video.pause();
+  }
 }
