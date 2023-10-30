@@ -67,8 +67,8 @@
   }
   
   .cardImage:hover {
-    filter: blur(10px); 
-  }
+    filter: blur(10px) brightness(80%) !important; 
+}
   
   .description {
     position: absolute;
@@ -86,7 +86,7 @@
     opacity: 1; 
   }
   .image-container:hover .cardImage {
-    filter: blur(5px); 
+    filter: blur(10px) brightness(80%) !important; 
   }
   
   .image-container:hover .description {
