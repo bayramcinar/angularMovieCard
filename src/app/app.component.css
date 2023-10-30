@@ -2,5 +2,7 @@
     background-color: #d5e2ea;
   }
 .col{
-      display: contents;
+      display: flex;
+    align-items: center;
+    justify-content: center;
 }
