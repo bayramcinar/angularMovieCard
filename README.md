@@ -3,4 +3,4 @@ In this project, I complated my first Angular Project.I also used selenium when 
 LINK : https://angular-movie-card.vercel.app/
 
 <h1 style="text-decoration: overline;">Here Photo</h1>
-<img src="https://github.com/bayramcinar/angularMovieCard/assets/99193151/a53908bd-f6b5-4569-97bd-cfada3ea44bd" style="width: 300px;">
+<img src="https://github.com/bayramcinar/angularMovieCard/assets/99193151/a53908bd-f6b5-4569-97bd-cfada3ea44bd" style="width: 700px;">
